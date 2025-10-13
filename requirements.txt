@@ -1,0 +1,7 @@
+flask
+langchain
+chromadb
+redis
+sentence-transformers
+pdfplumber
+requests
