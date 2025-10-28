@@ -16,7 +16,12 @@ from langchain.memory.chat_message_histories import RedisChatMessageHistory
 from langchain.memory import ConversationBufferMemory
 from langchain.memory import ConversationBufferMemory
 from langchain.schema import Document
+
+
 from voice_handler import voice_bp
+from auth import auth_bp
+from job_details import jobs_bp
+from s3_files import files_bp
 
 
 from datetime import timedelta
@@ -38,6 +43,13 @@ from collections import defaultdict
 from ingest_utils import read_pdf, chunk_text, extract_metadata
 from ats_evaluate_utills import extract_keywords_from_jd,compute_keyword_score,evaluate_resume_hybrid,compute_embedding_similarity
 from flask import request, jsonify
+from flask_sqlalchemy import SQLAlchemy
+from flask_migrate import Migrate
+from models import db
+from models import User
+from flask_jwt_extended import JWTManager
+import logging
+
 
 
 redis_url = "redis://localhost:6379"
@@ -45,7 +57,21 @@ OLLAMA_URL = "http://localhost:11434/api/generate"
 app = Flask(__name__)
 #CORS(app)
 
-CORS(app, resources={r"/*": {"origins": "*"}})
+app.config['SQLALCHEMY_DATABASE_URI'] = (
+    "postgresql://docu_admin:docu_pass123@postgres:5432/docusense_db"
+    "?options=-csearch_path%3Ddocusense"
+)
+
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+app.config['JWT_SECRET_KEY'] = "supersecret"
+app.secret_key = "supersecret"
+jwt = JWTManager(app)
+
+db.init_app(app)
+
+
+
+CORS(app, resources={r"/*": {"origins": "*"}},supports_credentials=True)
 app.config['WTF_CSRF_ENABLED'] = False
 
 
@@ -54,7 +80,13 @@ app.config['WTF_CSRF_ENABLED'] = False
 def after_request(response):
     response.headers.add('Access-Control-Allow-Origin', '*')
     response.headers.add('Access-Control-Allow-Headers', 'Content-Type')
+    response.headers.add('Access-Control-Allow-Credentials', 'true')
+    response.headers.add('Access-Control-Allow-Headers', 'Authorization, Content-Type')
     response.headers.add('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS')
+    response.headers.add('max_age', '3600')
+    response.headers.add('supports_credentials', 'true')
+    response.headers.add('expose_headers', 'Content-Type')
+                         
     return response
 
 # Initialize embeddings + Chroma
@@ -66,6 +98,20 @@ embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/all-mpnet-b
 vectorstore = Chroma(collection_name="resume_v2", embedding_function=embeddings, persist_directory="chroma_db")
 
 app.register_blueprint(voice_bp)
+app.register_blueprint(auth_bp, url_prefix='/auth')
+app.register_blueprint(jobs_bp)
+app.register_blueprint(files_bp)
+
+
+
+logging.basicConfig(
+    level=logging.INFO,                             # or DEBUG for more detail
+    format="%(asctime)s [%(levelname)s] %(name)s: %(message)s",
+    handlers=[
+        logging.FileHandler("app.log"),             # log to file
+        logging.StreamHandler()                     # also show in console
+    ]
+)
 
 def query_ollama(prompt, ollama_url="http://localhost:11434/api/generate"):
     """
@@ -123,8 +169,7 @@ def query_ollama(prompt, ollama_url="http://localhost:11434/api/generate"):
     
 @app.route("/")
 def home():
-    return "Flask is running!"
-
+    return "Flask is running again !"
 
 #redis_client = redis.StrictRedis.from_url(redis_url)
 REDIS_URL = "redis://localhost:6379/0"
@@ -686,4 +731,6 @@ def flush_all_memory():
 
 
 if __name__ == "__main__":
-    app.run(debug=True, port=5000)
+    with app.app_context():
+            db.create_all()
+    app.run(debug=True, port=5002)

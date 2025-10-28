@@ -1,0 +1,81 @@
+2025-10-28 02:27:08,930 [WARNING] werkzeug:  * Debugger is active!
+2025-10-28 02:27:08,930 [INFO] werkzeug:  * Debugger PIN: 125-118-578
+2025-10-28 02:27:12,020 [INFO] werkzeug:  * Detected change in '/app/s3_files.py', reloading
+2025-10-28 02:27:16,723 [WARNING] werkzeug:  * Debugger is active!
+2025-10-28 02:27:16,724 [INFO] werkzeug:  * Debugger PIN: 125-118-578
+2025-10-28 02:27:32,126 [INFO] werkzeug:  * Detected change in '/app/s3_files.py', reloading
+2025-10-28 02:27:37,457 [WARNING] werkzeug:  * Debugger is active!
+2025-10-28 02:27:37,458 [INFO] werkzeug:  * Debugger PIN: 125-118-578
+2025-10-28 02:27:59,048 [INFO] werkzeug:  * Detected change in '/app/s3_files.py', reloading
+2025-10-28 02:28:04,231 [WARNING] werkzeug:  * Debugger is active!
+2025-10-28 02:28:04,231 [INFO] werkzeug:  * Debugger PIN: 125-118-578
+2025-10-28 02:31:01,723 [INFO] werkzeug:  * Detected change in '/app/job_details.py', reloading
+2025-10-28 02:31:06,792 [WARNING] werkzeug:  * Debugger is active!
+2025-10-28 02:31:06,792 [INFO] werkzeug:  * Debugger PIN: 125-118-578
+2025-10-28 02:31:08,846 [INFO] werkzeug:  * Detected change in '/app/job_details.py', reloading
+2025-10-28 02:31:14,863 [WARNING] werkzeug:  * Debugger is active!
+2025-10-28 02:31:14,863 [INFO] werkzeug:  * Debugger PIN: 125-118-578
+2025-10-28 02:31:15,907 [INFO] werkzeug:  * Detected change in '/app/job_details.py', reloading
+2025-10-28 02:31:21,083 [WARNING] werkzeug:  * Debugger is active!
+2025-10-28 02:31:21,084 [INFO] werkzeug:  * Debugger PIN: 125-118-578
+2025-10-28 02:32:14,834 [INFO] werkzeug: 192.168.65.1 - - [28/Oct/2025 02:32:14] "OPTIONS /api/jobs HTTP/1.1" 200 -
+2025-10-28 02:32:14,883 [INFO] werkzeug: 192.168.65.1 - - [28/Oct/2025 02:32:14] "GET /api/jobs HTTP/1.1" 200 -
+2025-10-28 02:32:18,833 [INFO] werkzeug: 192.168.65.1 - - [28/Oct/2025 02:32:18] "GET /api/jobs HTTP/1.1" 200 -
+2025-10-28 02:32:20,824 [INFO] werkzeug: 192.168.65.1 - - [28/Oct/2025 02:32:20] "OPTIONS /api/jobs HTTP/1.1" 200 -
+2025-10-28 02:32:20,835 [INFO] werkzeug: 192.168.65.1 - - [28/Oct/2025 02:32:20] "GET /api/jobs HTTP/1.1" 200 -
+2025-10-28 02:32:21,825 [INFO] werkzeug: 192.168.65.1 - - [28/Oct/2025 02:32:21] "GET /api/jobs HTTP/1.1" 200 -
+2025-10-28 02:35:33,838 [INFO] werkzeug: 192.168.65.1 - - [28/Oct/2025 02:35:33] "OPTIONS /api/jobs HTTP/1.1" 200 -
+2025-10-28 02:35:33,852 [INFO] werkzeug: 192.168.65.1 - - [28/Oct/2025 02:35:33] "GET /api/jobs HTTP/1.1" 200 -
+2025-10-28 02:35:36,826 [INFO] werkzeug: 192.168.65.1 - - [28/Oct/2025 02:35:36] "GET /api/jobs HTTP/1.1" 200 -
+2025-10-28 02:36:08,818 [INFO] werkzeug: 192.168.65.1 - - [28/Oct/2025 02:36:08] "OPTIONS /api/jobs HTTP/1.1" 200 -
+2025-10-28 02:36:08,835 [INFO] werkzeug: 192.168.65.1 - - [28/Oct/2025 02:36:08] "GET /api/jobs HTTP/1.1" 200 -
+2025-10-28 02:36:47,823 [INFO] werkzeug: 192.168.65.1 - - [28/Oct/2025 02:36:47] "OPTIONS /api/jobs HTTP/1.1" 200 -
+2025-10-28 02:36:47,830 [INFO] werkzeug: 192.168.65.1 - - [28/Oct/2025 02:36:47] "GET /api/jobs HTTP/1.1" 200 -
+2025-10-28 02:36:50,824 [INFO] werkzeug: 192.168.65.1 - - [28/Oct/2025 02:36:50] "GET /api/jobs HTTP/1.1" 200 -
+2025-10-28 02:36:54,818 [INFO] werkzeug: 192.168.65.1 - - [28/Oct/2025 02:36:54] "OPTIONS /api/jobs HTTP/1.1" 200 -
+2025-10-28 02:36:54,827 [INFO] werkzeug: 192.168.65.1 - - [28/Oct/2025 02:36:54] "GET /api/jobs HTTP/1.1" 200 -
+2025-10-28 02:36:55,830 [INFO] werkzeug: 192.168.65.1 - - [28/Oct/2025 02:36:55] "GET /api/jobs HTTP/1.1" 200 -
+2025-10-28 02:36:57,827 [INFO] werkzeug: 192.168.65.1 - - [28/Oct/2025 02:36:57] "GET /api/jobs HTTP/1.1" 200 -
+2025-10-28 02:37:05,820 [INFO] werkzeug: 192.168.65.1 - - [28/Oct/2025 02:37:05] "OPTIONS /api/jobs HTTP/1.1" 200 -
+2025-10-28 02:37:05,828 [INFO] werkzeug: 192.168.65.1 - - [28/Oct/2025 02:37:05] "GET /api/jobs HTTP/1.1" 200 -
+2025-10-28 02:38:56,563 [INFO] werkzeug: 192.168.65.1 - - [28/Oct/2025 02:38:56] "OPTIONS /api/jobs HTTP/1.1" 200 -
+2025-10-28 02:38:56,582 [INFO] werkzeug: 192.168.65.1 - - [28/Oct/2025 02:38:56] "GET /api/jobs HTTP/1.1" 200 -
+2025-10-28 02:39:03,004 [INFO] werkzeug: 192.168.65.1 - - [28/Oct/2025 02:39:03] "OPTIONS /api/jobs/my-applications HTTP/1.1" 200 -
+2025-10-28 02:39:03,014 [INFO] werkzeug: 192.168.65.1 - - [28/Oct/2025 02:39:03] "[31m[1mGET /api/jobs/my-applications HTTP/1.1[0m" 401 -
+2025-10-28 02:39:25,276 [INFO] werkzeug: 192.168.65.1 - - [28/Oct/2025 02:39:25] "OPTIONS /api/jobs HTTP/1.1" 200 -
+2025-10-28 02:39:25,283 [INFO] werkzeug: 192.168.65.1 - - [28/Oct/2025 02:39:25] "GET /api/jobs HTTP/1.1" 200 -
+2025-10-28 02:39:53,086 [INFO] werkzeug: 192.168.65.1 - - [28/Oct/2025 02:39:53] "OPTIONS /auth/login HTTP/1.1" 200 -
+2025-10-28 02:39:53,202 [INFO] werkzeug: 192.168.65.1 - - [28/Oct/2025 02:39:53] "POST /auth/login HTTP/1.1" 200 -
+2025-10-28 02:40:28,432 [INFO] werkzeug: 192.168.65.1 - - [28/Oct/2025 02:40:28] "OPTIONS /api/files/upload/resume HTTP/1.1" 200 -
+2025-10-28 02:40:28,467 [INFO] root: User 16 uploaded resume: http://minio:9000/docusense/resumes/16/634a43d3-15b4-4a9b-bc15-e890d199a4fa.pdf
+2025-10-28 02:40:28,472 [INFO] werkzeug: 192.168.65.1 - - [28/Oct/2025 02:40:28] "POST /api/files/upload/resume HTTP/1.1" 200 -
+2025-10-28 02:40:28,476 [INFO] werkzeug: 192.168.65.1 - - [28/Oct/2025 02:40:28] "OPTIONS /api/jobs/1/apply HTTP/1.1" 200 -
+2025-10-28 02:40:28,487 [INFO] werkzeug: 192.168.65.1 - - [28/Oct/2025 02:40:28] "[31m[1mPOST /api/jobs/1/apply HTTP/1.1[0m" 400 -
+2025-10-28 02:40:39,173 [INFO] werkzeug: 192.168.65.1 - - [28/Oct/2025 02:40:39] "OPTIONS /api/jobs/my-applications HTTP/1.1" 200 -
+2025-10-28 02:40:39,193 [INFO] werkzeug: 192.168.65.1 - - [28/Oct/2025 02:40:39] "GET /api/jobs/my-applications HTTP/1.1" 200 -
+2025-10-28 02:40:46,365 [INFO] werkzeug: 192.168.65.1 - - [28/Oct/2025 02:40:46] "OPTIONS /api/jobs/my-applications?status=submitted HTTP/1.1" 200 -
+2025-10-28 02:40:46,383 [INFO] werkzeug: 192.168.65.1 - - [28/Oct/2025 02:40:46] "GET /api/jobs/my-applications?status=submitted HTTP/1.1" 200 -
+2025-10-28 02:40:46,864 [INFO] werkzeug: 192.168.65.1 - - [28/Oct/2025 02:40:46] "OPTIONS /api/jobs/my-applications?status=under_review HTTP/1.1" 200 -
+2025-10-28 02:40:46,878 [INFO] werkzeug: 192.168.65.1 - - [28/Oct/2025 02:40:46] "GET /api/jobs/my-applications?status=under_review HTTP/1.1" 200 -
+2025-10-28 02:40:47,432 [INFO] werkzeug: 192.168.65.1 - - [28/Oct/2025 02:40:47] "OPTIONS /api/jobs/my-applications?status=interview_scheduled HTTP/1.1" 200 -
+2025-10-28 02:40:47,444 [INFO] werkzeug: 192.168.65.1 - - [28/Oct/2025 02:40:47] "GET /api/jobs/my-applications?status=interview_scheduled HTTP/1.1" 200 -
+2025-10-28 02:40:48,217 [INFO] werkzeug: 192.168.65.1 - - [28/Oct/2025 02:40:48] "OPTIONS /api/jobs/my-applications?status=hired HTTP/1.1" 200 -
+2025-10-28 02:40:48,226 [INFO] werkzeug: 192.168.65.1 - - [28/Oct/2025 02:40:48] "GET /api/jobs/my-applications?status=hired HTTP/1.1" 200 -
+2025-10-28 02:40:49,173 [INFO] werkzeug: 192.168.65.1 - - [28/Oct/2025 02:40:49] "GET /api/jobs/my-applications?status=under_review HTTP/1.1" 200 -
+2025-10-28 02:40:51,004 [INFO] werkzeug: 192.168.65.1 - - [28/Oct/2025 02:40:51] "GET /api/jobs/my-applications?status=submitted HTTP/1.1" 200 -
+2025-10-28 02:40:51,609 [INFO] werkzeug: 192.168.65.1 - - [28/Oct/2025 02:40:51] "OPTIONS /api/jobs/my-applications HTTP/1.1" 200 -
+2025-10-28 02:40:51,622 [INFO] werkzeug: 192.168.65.1 - - [28/Oct/2025 02:40:51] "GET /api/jobs/my-applications HTTP/1.1" 200 -
+2025-10-28 02:40:57,569 [INFO] werkzeug: 192.168.65.1 - - [28/Oct/2025 02:40:57] "OPTIONS /api/jobs/my-applications?status=submitted HTTP/1.1" 200 -
+2025-10-28 02:40:57,580 [INFO] werkzeug: 192.168.65.1 - - [28/Oct/2025 02:40:57] "GET /api/jobs/my-applications?status=submitted HTTP/1.1" 200 -
+2025-10-28 02:40:58,752 [INFO] werkzeug: 192.168.65.1 - - [28/Oct/2025 02:40:58] "OPTIONS /api/jobs/my-applications?status=under_review HTTP/1.1" 200 -
+2025-10-28 02:40:58,762 [INFO] werkzeug: 192.168.65.1 - - [28/Oct/2025 02:40:58] "GET /api/jobs/my-applications?status=under_review HTTP/1.1" 200 -
+2025-10-28 02:40:59,919 [INFO] werkzeug: 192.168.65.1 - - [28/Oct/2025 02:40:59] "OPTIONS /api/jobs/my-applications?status=interview_scheduled HTTP/1.1" 200 -
+2025-10-28 02:40:59,933 [INFO] werkzeug: 192.168.65.1 - - [28/Oct/2025 02:40:59] "GET /api/jobs/my-applications?status=interview_scheduled HTTP/1.1" 200 -
+2025-10-28 02:41:00,632 [INFO] werkzeug: 192.168.65.1 - - [28/Oct/2025 02:41:00] "OPTIONS /api/jobs/my-applications?status=hired HTTP/1.1" 200 -
+2025-10-28 02:41:00,643 [INFO] werkzeug: 192.168.65.1 - - [28/Oct/2025 02:41:00] "GET /api/jobs/my-applications?status=hired HTTP/1.1" 200 -
+2025-10-28 02:41:04,761 [INFO] werkzeug: 192.168.65.1 - - [28/Oct/2025 02:41:04] "OPTIONS /api/jobs/my-applications?status=submitted HTTP/1.1" 200 -
+2025-10-28 02:41:04,771 [INFO] werkzeug: 192.168.65.1 - - [28/Oct/2025 02:41:04] "GET /api/jobs/my-applications?status=submitted HTTP/1.1" 200 -
+2025-10-28 02:41:19,362 [INFO] werkzeug: 192.168.65.1 - - [28/Oct/2025 02:41:19] "OPTIONS /api/jobs/my-applications HTTP/1.1" 200 -
+2025-10-28 02:41:19,377 [INFO] werkzeug: 192.168.65.1 - - [28/Oct/2025 02:41:19] "GET /api/jobs/my-applications HTTP/1.1" 200 -
+2025-10-28 02:45:16,854 [INFO] werkzeug: 192.168.65.1 - - [28/Oct/2025 02:45:16] "OPTIONS /api/jobs HTTP/1.1" 200 -
+2025-10-28 02:45:16,864 [INFO] werkzeug: 192.168.65.1 - - [28/Oct/2025 02:45:16] "GET /api/jobs HTTP/1.1" 200 -
